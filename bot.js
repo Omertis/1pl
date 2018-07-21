@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-});
+});tr
 const ytdl = require('ytdl-core');
 const request = require('request');
 const fs = require('fs');
@@ -23,10 +23,10 @@ client.on('ready', function () {
     console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 
 });
-
+rt
 var servers = ['351519476879196174', '351519138566373386', '', '', '', '', '', '', '', '', '', '', '', '', ''];
 var queue = [];
-var guilds = ['', ''];
+var guilds = ['rt', ''];
 var queueNames = [];
 var isPlaying = false;
 var dispatcher = null;
