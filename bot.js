@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-});tr
+});
 const ytdl = require('ytdl-core');
 const request = require('request');
 const fs = require('fs');
@@ -23,10 +23,10 @@ client.on('ready', function () {
     console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 
 });
-rt
+
 var servers = ['351519476879196174', '351519138566373386', '', '', '', '', '', '', '', '', '', '', '', '', ''];
 var queue = [];
-var guilds = ['rt', ''];
+var guilds = ['', ''];
 var queueNames = [];
 var isPlaying = false;
 var dispatcher = null;
@@ -63,7 +63,7 @@ client.on('message', function (message) {
                 .setAuthor(client.user.username, client.user.avatarURL)
                 .setFooter('طلب بواسطة: ' + message.author.tag)
                 .setDescription('**قم بإدراج رابط او اسم الأغنيه**')
-                 .setFooter('Jelly Bot™ ')
+                 .setFooter('ME™ ')
 
             message.channel.sendEmbed(play_info)
             return;
@@ -103,7 +103,7 @@ client.on('message', function (message) {
                         .setColor("#6fc167")
                         .addField('من قبل:, **'` ${message.author.username}*`)
                         .setThumbnail(videoInfo.thumbnailUrl)
-       .setFooter('Jelly Bot™ ')
+       .setFooter('ME™ ')
 
                     // .setDescription('?')
                     message.channel.sendEmbed(play_info)
@@ -283,7 +283,7 @@ client.on('message', function (message) {
                         .setColor("#6fc167")
                         .setFooter('|| ' + message.author.tag)
                         .setThumbnail(videoInfo.thumbnailUrl)
-                        .setFooter('Jelly Bot™ ')
+                        .setFooter('ME™ ')
                     message.channel.sendEmbed(play_info);
                     queueNames.push(videoInfo.title);
                     now_playing.push(videoInfo.title);
@@ -306,7 +306,7 @@ client.on('message', function (message) {
                         .setColor("#6fc167")
                         .addField('**By :**', `**${message.author.username}**`)
                         .setThumbnail(videoInfo.thumbnailUrl)
-       .setFooter('Jelly Bot™ ')
+       .setFooter('ME™ ')
 
                     // .setDescription('?')
                     message.channel.sendEmbed(play_info)
@@ -450,33 +450,31 @@ client.on('message', message => {
     const embed = new Discord.RichEmbed()
      .setColor("RANDOM")
      .addField(`**__أوامر البوت__**`,`
-.    **${prefix}join\تعال**
+.    **${prefix}join|تعال**
      عشان يدخل البوت الروم
-     **${prefix}شغل\pla**
+     **${prefix}شغل|play**
      امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
-     **${prefix}تخطي\skip**
+     **${prefix}تخطي|skip**
      تغير الأغنية
-     **${prefix}وقف\stop**
+     **${prefix}وقف|stop**
      ايقاف الأغنية
-     **${prefix}كمل\resume**
+     **${prefix}كمل|resume**
      مواصلة الأغنية
-     **${prefix}صوت\vol**
+     **${prefix}صوت|vol**
      مستوى الصوت 1-100
-     **${prefix}اطلع\go**
+     **${prefix}اطلع|go**
      خروج البوت من الروم
-
-
      prefix = ${prefix}
      ping = ${Date.now() - message.createdTimestamp}ms
      for help = <@426471752877604874>
-     By Mark  `)
+     By ME™  `)
 
-      message.channel.send({embed});
+      message.author.send({embed});
      }
     });
 
 client.on('ready', () => {
-  client.user.setGame('1help\1play','https://www.twitch.tv/pd13');
+  client.user.setGame('[1help]..[1play]','https://www.twitch.tv/pd13');
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("NDcwMTExNTY3NDUxNzgzMTc4.DjRhkg.aT1zl6Df3zd6ArWy-GCINatkIec");
