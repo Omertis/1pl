@@ -14,7 +14,6 @@ const bot = new Discord.Client({
 	disableEveryone: true
 });
 
-let commandsList = fs.readFileSync('commands.md', 'utf8');
 
 /* MUSIC VARIABLES */
 let queue = []; // Songs queue
